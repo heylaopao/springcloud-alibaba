@@ -10,6 +10,8 @@
 
     <modules>
         <module>springcloud-alibaba-api</module>
+        <module>springcloud-alibaba-payment-20001</module>
+        <module>springcloud-alibaba-payment-20002</module>
     </modules>
 
     <!--spring boot 项目申明-->

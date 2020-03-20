@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.payment.mapper.PaymentMapper">
+    <resultMap id="BaseResultMap" type="com.ruoyi.api.entity.Payment">
+        <id column="id" property="id"/>
+        <id column="serial" property="serial"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, serial
+    </sql>
+
+    <insert id="insertSelective" useGeneratedKeys="true" keyProperty="id">
+        insert into tbl_payment (serial) values (#{serial})
+    </insert>
+</mapper>
