@@ -8,6 +8,10 @@
     <artifactId>springcloud-alibaba</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>springcloud-alibaba-api</module>
+    </modules>
+
     <!--spring boot 项目申明-->
     <parent>
         <groupId>org.springframework.boot</groupId>
