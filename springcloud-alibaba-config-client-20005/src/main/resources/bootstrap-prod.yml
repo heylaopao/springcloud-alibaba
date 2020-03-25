@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.198.129:8848
+      ## 配置中心
+      config:
+        server-addr: 192.168.198.129:8848
+        ## 配置文件格式
+        file-extension: yaml
+        group: CN_GROUP
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
